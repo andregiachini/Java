@@ -73,13 +73,51 @@ public class Main{
         //Exercicio 06
         System.out.println("EXERCICIO 06");
         System.out.println("--------------------------------------------------------");
-
         
+        int contador = 0;
+        for (int i = 2; i <= 100; i++) {
+            boolean primo = true;
+            if (contador == 15) {
+                break;
+            }
+
+            for (int l = 2; l < i; l++) {
+                if (i % l == 0) {
+                    primo = false;
+                }
+            }
+            if (primo) {
+                System.out.println(i);
+                contador++;
+            }
+        }
 
 
 
         System.out.println("--------------------------------------------------------");
 
+        //Exercicio 07
+        System.out.println("EXERCICIO 07");
+        System.out.println("--------------------------------------------------------");
+
+
+        for (int i = 100; i <= 200; i++) {
+            boolean primo = true;
+        
+
+            for (int l = 2; l < i; l++) {
+                if (i % l == 0) {
+                    primo = false;
+                }
+            }
+            if (primo) {
+                System.out.println(i);
+            }
+        }
+
+
+
+        System.out.println("--------------------------------------------------------");
 
 
 
