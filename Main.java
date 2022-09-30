@@ -178,6 +178,9 @@ public class Main{
                 System.out.println(array[p]);
             }
         }
+
+        System.out.println("--------------------------------------------------------");
+        
     }
 
     
