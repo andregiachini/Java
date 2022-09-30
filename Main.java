@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import javax.sound.sampled.SourceDataLine;
 
 public class Main{
@@ -120,16 +122,63 @@ public class Main{
         System.out.println("--------------------------------------------------------");
 
 
+        System.out.println("EXERCICIO 08");
+        System.out.println("--------------------------------------------------------");
+
+        
+        int vetor[] = new int[10];
+
+        for (int i = 0; i < 10; i++) {
+            Scanner s = new Scanner(System.in);
+            System.out.print("Digite o valor: ");
+            int num = s.nextInt();
+            
+            vetor[i] = num;
+        }
+        int maior = vetor[0];
+        int menor = vetor[0];
+        for (int l = 1; l < vetor.length; l++) {
+            //System.out.println("vetor na posição " + l + " é " + vetor[l]);
+            if (vetor[l] > maior) {
+                maior = vetor[l];
+
+            }
+
+            if (vetor[l] < menor) {
+                menor = vetor[l];
+
+            }
+        }
+        System.out.println("menor: " + menor);
+        System.out.println("maior: " + maior);
+        System.out.println("--------------------------------------------------------");
 
 
+        
 
 
+        System.out.println("EXERCICIO 09");
+        System.out.println("--------------------------------------------------------");
 
+        int[] array = new int[50];
+        int soma4 = 0;
+        for(int i=0;i<50;i++){
+            array[i] = 1 + (int) (Math.random() * 100); 
+            soma4 = soma4 + array[i];
+        }
 
+        int media = soma4 / 50;
 
+        System.out.println(media);
 
+        System.out.println("Valores abaixo da média:");
 
-
-
+        for(int p = 0; p < 50; p++){
+            if(array[p] < media){
+                System.out.println(array[p]);
+            }
+        }
     }
+
+    
 }
