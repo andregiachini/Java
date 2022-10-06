@@ -124,7 +124,6 @@ public class Main{
 
         System.out.println("EXERCICIO 08");
         System.out.println("--------------------------------------------------------");
-
         
         int vetor[] = new int[10];
 
