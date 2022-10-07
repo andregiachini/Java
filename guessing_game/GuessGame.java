@@ -7,9 +7,9 @@ public class GuessGame{
 
 
     public void startGame() {
-        p1 = new Player;
-        p2 = new Player;
-        p3 = new Player;
+        p1 = new Player();
+        p2 = new Player();
+        p3 = new Player();
 
         int guessp1 = 0;
         int guessp2 = 0;
@@ -20,7 +20,7 @@ public class GuessGame{
         boolean p3isRight = false;
 
 
-        int targetNumber = (int) (Math.random * 10);
+        int targetNumber = (int) (Math.random() * 10);
         System.out.println("Estou pensando em um numero de 0 a 9...");
 
         while (true){
