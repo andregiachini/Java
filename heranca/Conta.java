@@ -19,7 +19,7 @@ public class Conta {
 
 
     public boolean sacar(double valorRetirar){
-        if ((this.saldo - valorRetirar) >= 0) {
+        if (valorRetirar <= this.saldo) {
             this.saldo -= valorRetirar;
             return true;
         } else{
@@ -29,6 +29,7 @@ public class Conta {
 
 
     public void resumoExtrato(){
+        System.out.println("Nome: " + this.nome);
         System.out.println("O saldo atual da conta é: " + this.saldo);
     }
 
@@ -36,12 +37,4 @@ public class Conta {
     public void fazManutencao(){
         
     }
-    
-
-
-
-
-
-
-
 }
